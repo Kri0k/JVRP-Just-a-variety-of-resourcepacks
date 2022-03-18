@@ -1,6 +1,3 @@
-let theme = localStorage.getItem('theme');
-console.log(theme)
-
 var backgroundLight = [
     './resources/background/light/beacon.png',
     './resources/background/light/house.png',
@@ -35,19 +32,22 @@ function sortSeven() {
     
 }
 
+
 function themeTrigger(theme) {
     var randomImg = Math.floor(Math.random()*6);
+    var theme = localStorage[theme];
+
 
     if (document.querySelector('#theme-button').checked == true || theme == 'dark') {
-        document.body.background = backgroundDark[randomImg]
-        $('.body-block-body').css('background-color', '#708f7c')
-        localStorage.setItem(theme, 'dark')
+        document.body.background = backgroundDark[randomImg];
+        $('.body-block-body').css('background-color', '#708f7c');
+        localStorage.setItem(theme, 'dark'); console.log(theme);
         document.getElementById('theme-button').checked = true;
     }
     else {
-        document.body.background = backgroundLight[randomImg]
-        $('.body-block-body').css('background-color', '#dbd2e0')
-        localStorage.setItem(theme, 'light')
+        document.body.background = backgroundLight[randomImg];
+        $('.body-block-body').css('background-color', '#dbd2e0');
+        localStorage.setItem(theme, 'light'); console.log(theme);
         document.getElementById('theme-button').checked = false;
     };
     // if (theme == 1) {document.getElementById('testExample').checked = true;}
