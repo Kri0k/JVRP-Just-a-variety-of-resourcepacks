@@ -35,6 +35,7 @@ function sortSeven() {
 var themes = localStorage.getItem('theme')
 if (themes == 'light') {localStorage.setItem('theme', 'dark'); themeChange();};
 if (themes == 'dark') {localStorage.setItem('theme', 'light'); themeChange();};
+if (themes != 'light' && themes != 'dark') {localStorage.setItem('theme', 'light'); themeChange();};
 
 
 function themeTrigger() {
