@@ -44,21 +44,8 @@ body {
     opacity: 0.6;
 }
 
-/*Переключение светлой/темной темы шапки и заднего фона*/
 .menu { width: 40%; height: 40%; transition: transform 550ms ease-in-out; opacity: 1; z-index: 1;}
-#theme-button:checked ~ .header > .menu-dark {display: block;}
-#theme-button:checked ~ .header > .menu-light {display: none;}
-#theme-button:checked ~ .header {background-color: #273b09;}
-#theme-button:checked ~ .header > .header-outline {background-color: #273b09;}
-#theme-button:checked ~ .header > .header-trigger > .header-triggerSun {display: block;}
-#theme-button:checked ~ .header > .header-trigger > .header-triggerMoon {display: none;}
-#theme-button:not(:checked) ~ .header > .menu-dark {display: none;}
-#theme-button:not(:checked) ~ .header > .menu-light {display: block;}
-#theme-button:not(:checked) ~ .header {background-color: #7b904b;}
-#theme-button:not(:checked) ~ .header > .header-outline {background-color: #7b904b;}
-#theme-button:not(:checked) ~ .header > .header-trigger > .header-triggerSun {display: none;}
-#theme-button:not(:checked) ~ .header > .header-trigger > .header-triggerMoon {display: block;}
-/**/
+
 
 .sunMoon {
     position: fixed;
@@ -180,5 +167,3 @@ body {
     border-radius: 10%;
     background-color: rgb(194, 194, 194);
 }
-
-#theme-button:checked ~ .body-block-body { background-color: #708f7c;}
