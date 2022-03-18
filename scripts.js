@@ -32,24 +32,36 @@ function sortSeven() {
     
 }
 
+var themes = localStorage.getItem('theme')
+if (themes == 'light') {localStorage.setItem('theme', 'dark'); themeChange();};
+if (themes == 'dark') {localStorage.setItem('theme', 'light'); themeChange();};
 
-function themeTrigger(theme) {
+
+function themeTrigger() {
+    var themes = localStorage.getItem('theme')
+    if (themes == 'light') {localStorage.setItem('theme', 'dark'); themeChange();};
+    if (themes == 'dark') {localStorage.setItem('theme', 'light'); themeChange();};
+}
+
+function themeChange() {
     var randomImg = Math.floor(Math.random()*6);
-    var theme = localStorage[theme];
-
-
-    if (document.querySelector('#theme-button').checked == true || theme == 'dark') {
+    var themes = localStorage.getItem('theme');
+    if (themes == 'dark') {
+        console.log(themes);
         document.body.background = backgroundDark[randomImg];
         $('.body-block-body').css('background-color', '#708f7c');
-        localStorage.setItem(theme, 'dark'); console.log(theme);
-        document.getElementById('theme-button').checked = true;
+        $('.menu-dark').css('display', 'block'); $('.menu-light').css('display', 'none');
+        $('.header').css('background-color', '#273b09');
+        $('.header-outline').css('background-color', '#273b09');
+        $('.header-triggerSun').css('display', 'block'); $('.header-triggerMoon').css('display', 'none');
     }
     else {
+        console.log(themes);
         document.body.background = backgroundLight[randomImg];
         $('.body-block-body').css('background-color', '#dbd2e0');
-        localStorage.setItem(theme, 'light'); console.log(theme);
-        document.getElementById('theme-button').checked = false;
+        $('.menu-dark').css('display', 'none'); $('.menu-light').css('display', 'block');
+        $('.header').css('background-color', '#7b904b');
+        $('.header-outline').css('background-color', '#7b904b');
+        $('.header-triggerSun').css('display', 'none'); $('.header-triggerMoon').css('display', 'block');
     };
-    // if (theme == 1) {document.getElementById('testExample').checked = true;}
-    // else {document.getElementById('testExample').checked = false;}
 }
