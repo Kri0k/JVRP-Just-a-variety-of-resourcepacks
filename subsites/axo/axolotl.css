@@ -1,0 +1,7 @@
+.gallery-check:nth-child(1) {background-image: url(../../resources/axolotle/1.png);}
+.gallery-check:nth-child(2) {background-image: url(../../resources/axolotle/2.png);}
+.body-gallery{
+    grid-template-areas:  
+        "a b"
+        "main main";
+}
