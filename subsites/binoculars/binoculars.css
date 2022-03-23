@@ -1,8 +1,0 @@
-.gallery-check:nth-child(1) {background-image: url(../../resources/binoculars/1.png);}
-.gallery-check:nth-child(2) {background-image: url(../../resources/binoculars/2.png);}
-.gallery-check:nth-child(3) {background-image: url(../../resources/binoculars/3.png);}
-.body-gallery{
-    grid-template-areas:  
-        "a b c"
-        "main main main";
-}
