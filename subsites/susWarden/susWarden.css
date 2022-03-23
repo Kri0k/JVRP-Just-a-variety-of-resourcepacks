@@ -1,0 +1,8 @@
+.gallery-check:nth-child(1) {background-image: url(../../resources/sus-2.png);}
+.body-gallery{
+    grid-template-areas:  
+        "a"
+        "main";
+}
+.gallery {background-image: url(../../resources/sus-2.png);}
+.footer-download {font-family: Fredoka; font-weight: 700; font-size: 1.5vw; padding: 6% 8% 6% 8%; text-decoration: none; border-radius: 0.5vw;}

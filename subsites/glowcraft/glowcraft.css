@@ -1,0 +1,11 @@
+.gallery-check:nth-child(1) {background-image: url(../../resources/glowcraft/1.png);}
+.gallery-check:nth-child(2) {background-image: url(../../resources/glowcraft/2.png);}
+.gallery-check:nth-child(3) {background-image: url(../../resources/glowcraft/3.png);}
+.gallery-check:nth-child(4) {background-image: url(../../resources/glowcraft/4.png);}
+.body-gallery{
+    grid-template-areas:  
+        "a b c d"
+        "main main main main";
+}
+
+.gallery-check {width: 7vw; height: 4vw;}
