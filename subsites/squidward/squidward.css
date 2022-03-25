@@ -1,0 +1,6 @@
+.gallery-check:nth-child(1) {background-image: url(../../resources/squid.png);}
+.body-gallery{
+    grid-template-areas:  
+        "a"
+        "main";
+}
