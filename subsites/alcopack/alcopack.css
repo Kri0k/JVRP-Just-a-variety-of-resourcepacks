@@ -1,0 +1,29 @@
+.gallery-check:nth-child(1) {background-image: url(../../resources/alcopack/blue_wine.png);}
+.gallery-check:nth-child(2) {background-image: url(../../resources/alcopack/glow_wine.png);}
+.gallery-check:nth-child(3) {background-image: url(../../resources/alcopack/green_wine.png);}
+.gallery-check:nth-child(4) {background-image: url(../../resources/alcopack/white_wine.png);}
+.gallery-check:nth-child(5) {background-image: url(../../resources/alcopack/red_wine.png);}
+.gallery-check:nth-child(6) {background-image: url(../../resources/alcopack/orange_wine.png);}
+.gallery-check:nth-child(7) {background-image: url(../../resources/alcopack/pink_wine.png);}
+.gallery-check:nth-child(8) {background-image: url(../../resources/alcopack/cola.png);}
+.gallery-check:nth-child(9) {background-image: url(../../resources/alcopack/more.png);}
+.gallery-check:nth-child(10) {background-image: url(../../resources/alcopack/showcase.png);}
+.body-gallery{
+    grid-template-areas:  
+        "a b c d e"
+        "f g h i j"
+        "main main main main main";
+}
+
+.gallery-check {background-size: 100% 100%; width: 6vw; height: 3.5vw;}
+.body > div {font-size: 1.6vw; align-content: space-between;}
+.body-footer {grid-template-areas: 'a b c d e';}
+.footer-download {font-size: 1.2vw; padding: 8% 4% 8% 4%;}
+
+.body-gallery {grid-template-rows: 15% 15% 70%; height: 30vw;}
+.body {grid-template-rows: 20% 65% 15%;}
+
+.tutorial {
+    text-decoration: none; color: white; padding: 2vw 1vw 2vw 1vw; background-color: rgb(167, 29, 29);
+    margin-top: 10vh; font-family: Fredoka; border-radius: 1vw;
+}
