@@ -62,6 +62,7 @@ function themeChange() {
         console.log(themes);
         document.body.background = backgroundDark[randomImg];
         $('.body-block-body').css('background-color', '#708f7c');
+        $('.body-block-body-datapack').css('background-color', '#708db8');
         $('.menu-dark').css('display', 'block'); $('.menu-light').css('display', 'none');
         $('.header').css('background-color', '#273b09');
         $('.header-outline').css('background-color', '#273b09');
@@ -71,6 +72,7 @@ function themeChange() {
         console.log(themes);
         document.body.background = backgroundLight[randomImg];
         $('.body-block-body').css('background-color', '#dbd2e0');
+        $('.body-block-body-datapack').css('background-color', '#348cf0');
         $('.menu-dark').css('display', 'none'); $('.menu-light').css('display', 'block');
         $('.header').css('background-color', '#7b904b');
         $('.header-outline').css('background-color', '#7b904b');
