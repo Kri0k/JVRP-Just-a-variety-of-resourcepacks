@@ -43,6 +43,7 @@ function themeChange() {
         $('.body-gallery').css('background-color', '#708f7c');
         $('.footer-download').addClass('light-theme-properties');
         $('.footer-download').removeClass('dark-theme-properties');
+        $('.body-pack').css('background-color', '#708db8');
     }
     else {
         console.log(themes);
@@ -56,5 +57,6 @@ function themeChange() {
         $('.body-gallery').css('background-color', '#dbd2e0');
         $('.footer-download').removeClass('light-theme-properties');
         $('.footer-download').addClass('dark-theme-properties');
+        $('.body-pack').css('background-color', '#348cf0');
     };
 }
